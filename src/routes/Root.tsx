@@ -2,8 +2,10 @@ import { Outlet } from "react-router-dom";
 
 const Root = () => {
   return (
-    <div>
-      <div>Navbar</div>
+    <div className="text-[#313131]">
+      <div className="px-8 py-4 bg-[#009BFA]">
+        <p className="text-2xl font-yeseva text-white">Weather Forecast</p>
+      </div>
       <Outlet />
     </div>
   );
