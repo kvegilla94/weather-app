@@ -5,6 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
 import Root from "./routes/Root";
 import Login from "./routes/Login";
+import Home from "./routes/Home";
+import Weather from "./routes/Weather";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +14,8 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       { index: true, element: <Login /> },
-      { path: "home", element: <div>Home</div> },
-      { path: "weather", element: <div>Weather</div> },
+      { path: "home", element: <Home /> },
+      { path: "weather", element: <Weather /> },
     ],
   },
 ]);
