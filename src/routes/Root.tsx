@@ -11,11 +11,11 @@ const Root = () => {
 
   return (
     <div className="text-[#313131] flex flex-col min-h-screen">
-      <div className="px-16 py-4 bg-[#009BFA] flex justify-between items-center">
+      <div className="px-16 py-4 bg-sky-500 flex justify-between items-center">
         <p className="text-2xl font-yeseva text-white">Weather Forecast</p>
         {isAuthenticated ? (
           <button
-            className="bg-[#004BFA] text-white rounded-md px-6 py-1 hover:bg-[#004BFA50]"
+            className="bg-sky-500 text-white rounded-md px-6 py-1 hover:bg-sky-600"
             onClick={() => logout()}
           >
             Logout
