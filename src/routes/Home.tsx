@@ -18,7 +18,8 @@ const Home = () => {
       <div className="flex flex-col items-center">
         <div className="text-3xl font-bold">{user?.name}</div>
         <Link
-          to={`github.com/${user?.nickname}`}
+          to={`https://github.com/${user?.nickname}`}
+          target="_blank"
           className="hover:underline text-sky-500"
         >
           github.com/{user?.nickname}
