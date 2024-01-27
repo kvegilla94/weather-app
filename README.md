@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is for Ehrlich's ReactJS 24 Hours Code Challenge
 
-Currently, two official plugins are available:
+## This application is created using the following libraries
+- [react-router-dom](https://reactrouter.com/en/main) - handling page routes
+- [tailwindcss](https://tailwindcss.com) - UI styling
+- [@auth0/auth0-react](https://auth0.com) - user authentication using Github account
+- [@fontsource](https://fontsource.org) - external fonts
+- [axios](https://axios-http.com/docs/intro) - calling external APIs
+- [react-icons](https://react-icons.github.io/react-icons/) - icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Running in your local machine
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository
+2. Create a new file called `.env` in the root directory and copy the contents from `.env.example`
+3. Fill in the environment variables with your own API keys
+3. On your terminal, run `yarn install`
+4. Then run `yarn run dev`
