@@ -8,7 +8,9 @@ const Home = () => {
   const { user } = useAuth0();
 
   const displayWeather = () => {
-    navigate(`/weather`, { state: { city } });
+    if (city !== "") {
+      navigate(`/weather`, { state: { city } });
+    }
   };
 
   return (
