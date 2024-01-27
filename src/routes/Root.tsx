@@ -1,4 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import { FaCloud } from "react-icons/fa";
 import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 
@@ -11,7 +12,8 @@ const Root = () => {
 
   return (
     <div className="text-[#313131] flex flex-col min-h-screen">
-      <div className="px-16 py-4 bg-sky-500 flex justify-between items-center">
+      <div className="px-8 sm:px-16 py-4 bg-sky-500 flex justify-between items-center">
+        <FaCloud className="text-white text-2xl" />
         <p className="text-2xl font-yeseva text-white">Weather Forecast</p>
         {isAuthenticated ? (
           <button

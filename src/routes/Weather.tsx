@@ -50,8 +50,8 @@ const Weather = () => {
     <div className="container mx-auto flex flex-col flex-1 items-center justify-center p-8">
       {weather && (
         <div className="w-full space-y-2 flex flex-col items-end">
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <table className="w-full text-sm text-left rtl:text-right text-sky-50">
+            <thead className="text-xs text-sky-50 uppercase bg-sky-700">
               <tr className="table-row">
                 <th className="px-6 py-3">Date (MM/DD/YYYY)</th>
                 <th className="px-6 py-3">Temp (F)</th>
@@ -61,8 +61,8 @@ const Weather = () => {
                 <th className=" hidden sm:table-cell px-6 py-3">Humidity</th>
               </tr>
             </thead>
-            <tbody className="bg-white dark:bg-gray-800">
-              <tr className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <tbody className="bg-sky-50 dark:bg-sky-800">
+              <tr className="px-6 py-4 font-medium whitespace-nowrap text-white">
                 <td className="px-6 py-4">{weather.date}</td>
                 <td className="px-6 py-4">{weather.temp}</td>
                 <td className="hidden sm:table-cell px-6 py-4">
@@ -81,7 +81,7 @@ const Weather = () => {
             </tbody>
           </table>
           <button
-            className="w-full sm:w-fit rounded-md px-6 py-2 bg-sky-500 hover:bg-sky-600 text-white"
+            className="w-full sm:w-fit rounded-md px-6 py-2 bg-sky-500 hover:bg-sky-600 text-white text-lg"
             onClick={() => navigate(-1)}
           >
             Back
